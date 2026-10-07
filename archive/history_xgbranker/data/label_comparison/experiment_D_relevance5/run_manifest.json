@@ -1,0 +1,22 @@
+{
+  "input_filename": "test_45_factors_weekly.csv",
+  "input_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "output_dir": "/Users/april/Desktop/USYD 2026s2/5703/第二版/outputs/xgbranker_cd_comparison/experiment_D_relevance5",
+  "python_version": "3.12.14",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.5.3",
+  "xgboost_version": "3.4.1",
+  "formal_prediction_weeks": 366,
+  "formal_prediction_rows": 22430,
+  "refit_model_instances": 53,
+  "ensemble_refit_blocks": 15,
+  "parameters_frozen_before_final_run": true,
+  "experiment_id": "experiment_D_relevance5",
+  "training_label_mode": "weekly_relevance_5",
+  "continuous_training_target_used": false,
+  "target2_used": false,
+  "classification_labels_used": true,
+  "relevance_bins": 5,
+  "continuous_target_used_for_evaluation": true,
+  "backtest_performed": false
+}

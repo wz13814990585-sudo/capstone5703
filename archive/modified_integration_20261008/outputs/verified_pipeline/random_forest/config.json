@@ -1,0 +1,54 @@
+{
+  "source": "/Users/april/Desktop/USYD 2026s2/5703/week8_code/data/test_45_factors_weekly.csv",
+  "source_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "quick": true,
+  "feature_sets": {
+    "7": [
+      "revenue_growth_yoy",
+      "ret_120d",
+      "cashflow_to_assets",
+      "ret_1d",
+      "ret_5d",
+      "close_location_value",
+      "body_range_ratio"
+    ]
+  },
+  "training_designs": {
+    "rolling_3y": {
+      "mode": "rolling",
+      "years": 3,
+      "dev_start": "2019-09-01 00:00:00"
+    },
+    "rolling_6y": {
+      "mode": "rolling",
+      "years": 6,
+      "dev_start": "2022-09-01 00:00:00"
+    },
+    "fixed": {
+      "mode": "fixed",
+      "years": 6,
+      "dev_start": "2022-09-01 00:00:00"
+    }
+  },
+  "selected_designs": [
+    "rolling_3y",
+    "rolling_6y",
+    "fixed"
+  ],
+  "candidate_grid": [
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 10,
+      "max_features": "sqrt",
+      "n_estimators": 8
+    }
+  ],
+  "random_state": 5703,
+  "screening_source": "/Users/april/Desktop/USYD 2026s2/5703/week8_code/single_factor_analysis/reference/Single_Factor_Screening_66_Stocks_EN.xlsx",
+  "target_type": "log",
+  "refit_weeks": 4,
+  "selection": "Development Top5 -> Validation winner, screening-first ranking with fallback",
+  "selection_return_metric": "strategy annualized return minus benchmark annualized return",
+  "label_rule": "next global observation date; label_end_date <= fit_date and <= stage_stop",
+  "rolling_cadence": "four observations; restarts at every stage boundary"
+}

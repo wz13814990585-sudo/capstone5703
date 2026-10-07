@@ -1,0 +1,22 @@
+{
+  "input_filename": "test_45_factors_weekly.csv",
+  "input_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "rows": 27651,
+  "tickers": 66,
+  "weeks": 522,
+  "start_date": "2016-09-02",
+  "end_date": "2026-08-28",
+  "min_stocks_per_week": 30,
+  "max_stocks_per_week": 66,
+  "target_column": "target",
+  "target_definition": "ln(AdjClose_week_end(t+1) / AdjClose_week_end(t)); next week's final trading-day adjusted Close divided by this week's final trading-day adjusted Close. Label only, not a model input.",
+  "target_alignment": {
+    "formula": "log(adj_close[t+1] / adj_close[t])",
+    "comparable_consecutive_rows": 27569,
+    "mismatch_rows": 0,
+    "max_absolute_difference": 4.543349203800506e-16,
+    "unverifiable_rows": 82,
+    "note": "Rows are unverifiable inside this factor file when a ticker is absent in the next weekly cross-section or when the row is the ticker's final observation."
+  },
+  "missing_feature_values": 0
+}

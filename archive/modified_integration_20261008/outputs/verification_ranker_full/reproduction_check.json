@@ -1,0 +1,11 @@
+{
+  "rows": 22430,
+  "original_rows": 22430,
+  "current_rows": 22430,
+  "max_absolute_difference": {
+    "ensemble_ranking_score": 0.0,
+    "model_1_raw_score": 0.0,
+    "model_2_raw_score": 0.0,
+    "model_3_raw_score": 0.0
+  }
+}

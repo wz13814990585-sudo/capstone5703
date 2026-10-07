@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="82" y="32" font-family="sans-serif" font-size="20" font-weight="bold">RANKER-HISTORY-returns_3-fixed | Last13w | New strategy comparison | 10bps</text>
+<text x="82" y="575" font-family="sans-serif" font-size="13">NAV (initial = 1) | weekly close-to-close research returns</text>
+<path d="M82,520.0H872" stroke="#e2e8f0"/>
+<text x="72" y="524.0" text-anchor="end" font-family="sans-serif" font-size="12">0.92</text>
+<path d="M82,428.99999999999994H872" stroke="#e2e8f0"/>
+<text x="72" y="432.99999999999994" text-anchor="end" font-family="sans-serif" font-size="12">0.99</text>
+<path d="M82,338.00000000000006H872" stroke="#e2e8f0"/>
+<text x="72" y="342.00000000000006" text-anchor="end" font-family="sans-serif" font-size="12">1.05</text>
+<path d="M82,247.0000000000001H872" stroke="#e2e8f0"/>
+<text x="72" y="251.0000000000001" text-anchor="end" font-family="sans-serif" font-size="12">1.12</text>
+<path d="M82,155.9999999999999H872" stroke="#e2e8f0"/>
+<text x="72" y="159.9999999999999" text-anchor="end" font-family="sans-serif" font-size="12">1.19</text>
+<path d="M82,65.0H872" stroke="#e2e8f0"/>
+<text x="72" y="69.0" text-anchor="end" font-family="sans-serif" font-size="12">1.25</text>
+<text x="82.0" y="545" text-anchor="middle" font-family="sans-serif" font-size="12">2026-05-29</text>
+<text x="255.62637362637363" y="545" text-anchor="middle" font-family="sans-serif" font-size="12">2026-06-18</text>
+<text x="446.61538461538464" y="545" text-anchor="middle" font-family="sans-serif" font-size="12">2026-07-10</text>
+<text x="628.9230769230769" y="545" text-anchor="middle" font-family="sans-serif" font-size="12">2026-07-31</text>
+<text x="872.0" y="545" text-anchor="middle" font-family="sans-serif" font-size="12">2026-08-28</text>
+<polyline points="82.00,412.17 142.77,472.55 203.54,420.83 255.63,433.75 325.08,399.96 377.16,347.38 446.62,377.90 507.38,361.03 568.15,401.03 628.92,429.76 689.69,443.73 750.46,339.73 811.23,328.96 872.00,332.38" fill="none" stroke="#2563eb" stroke-width="2"/>
+<path d="M895,80h22" stroke="#2563eb" stroke-width="3"/>
+<text x="925" y="84" font-family="sans-serif" font-size="12">Top5</text>
+<polyline points="82.00,412.17 142.77,445.34 203.54,411.22 255.63,430.61 325.08,371.40 377.16,298.85 446.62,343.09 507.38,309.18 568.15,344.52 628.92,371.51 689.69,379.16 750.46,314.97 811.23,277.78 872.00,288.66" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<path d="M895,111h22" stroke="#7c3aed" stroke-width="3"/>
+<text x="925" y="115" font-family="sans-serif" font-size="12">Top5_LowVol26w</text>
+<polyline points="82.00,412.17 142.77,468.35 203.54,409.51 255.63,448.35 325.08,397.10 377.16,373.29 446.62,407.44 507.38,386.56 568.15,412.15 628.92,445.25 689.69,457.76 750.46,419.01 811.23,387.09 872.00,402.68" fill="none" stroke="#0f766e" stroke-width="2"/>
+<path d="M895,142h22" stroke="#0f766e" stroke-width="3"/>
+<text x="925" y="146" font-family="sans-serif" font-size="12">Top5_RankRisk26w</text>
+<polyline points="82.00,412.17 142.77,472.55 203.54,379.43 255.63,392.74 325.08,357.93 377.16,414.21 446.62,415.05 507.38,417.99 568.15,456.93 628.92,470.97 689.69,485.53 750.46,378.23 811.23,367.75 872.00,382.69" fill="none" stroke="#c026d3" stroke-width="2"/>
+<path d="M895,173h22" stroke="#c026d3" stroke-width="3"/>
+<text x="925" y="177" font-family="sans-serif" font-size="12">Top5_Buffer10</text>
+<polyline points="82.00,412.17 142.77,472.55 203.54,354.29 255.63,367.31 325.08,281.60 377.16,223.91 446.62,211.29 507.38,193.04 568.15,210.28 628.92,242.33 689.69,232.80 750.46,111.22 811.23,99.47 872.00,104.72" fill="none" stroke="#0284c7" stroke-width="2"/>
+<path d="M895,204h22" stroke="#0284c7" stroke-width="3"/>
+<text x="925" y="208" font-family="sans-serif" font-size="12">Top5_Rebalance2w</text>
+<polyline points="82.00,412.17 142.77,472.55 203.54,354.29 255.63,432.76 325.08,383.15 377.16,329.93 446.62,318.16 507.38,285.28 568.15,340.60 628.92,370.11 689.69,361.38 750.46,247.55 811.23,266.58 872.00,270.86" fill="none" stroke="#be123c" stroke-width="2"/>
+<path d="M895,235h22" stroke="#be123c" stroke-width="3"/>
+<text x="925" y="239" font-family="sans-serif" font-size="12">Top5_Rebalance4w</text>
+<polyline points="82.00,412.17 142.77,412.17 203.54,412.17 255.63,423.80 325.08,425.17 377.16,372.12 446.62,402.11 507.38,385.54 568.15,424.85 628.92,426.22 689.69,438.87 750.46,334.50 811.23,323.69 872.00,327.12" fill="none" stroke="#65a30d" stroke-width="2"/>
+<path d="M895,266h22" stroke="#65a30d" stroke-width="3"/>
+<text x="925" y="270" font-family="sans-serif" font-size="12">Top5_Trend26w</text>
+<polyline points="82.00,412.17 142.77,418.16 203.54,354.36 255.63,394.55 325.08,346.92 377.16,324.31 446.62,343.07 507.38,340.14 568.15,359.32 628.92,341.76 689.69,306.29 750.46,298.19 811.23,284.71 872.00,296.58" fill="none" stroke="#111827" stroke-width="2"/>
+<path d="M895,297h22" stroke="#111827" stroke-width="3"/>
+<text x="925" y="301" font-family="sans-serif" font-size="12">EqualWeight</text>
+</svg>

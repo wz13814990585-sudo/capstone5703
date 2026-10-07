@@ -1,0 +1,3 @@
+﻿model,mode,feature_set,status,passing_candidates,candidate,parameters
+xgboost_7_rolling,rolling,7,no_candidate_passed,0,,
+xgboost_7_fixed,fixed,7,selected,1,1.0,"{'max_depth': 2, 'min_child_weight': 5, 'n_estimators': 8}"

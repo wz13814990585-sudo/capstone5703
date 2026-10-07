@@ -1,0 +1,18 @@
+{
+  "TOP_X": 5,
+  "weight_method": "equal_weight",
+  "cash_rule": "always_invest",
+  "rebalance_interval_weeks": 1,
+  "transaction_cost_bps": 0.0,
+  "slippage_bps": 0.0,
+  "benchmark_method": "equal_weight_universe",
+  "target_return_type": "log",
+  "number_of_backtest_weeks": 365,
+  "ending_portfolio_value": 3.1645713491480407,
+  "annualized_return": 0.17835931154653228,
+  "information_ratio": 0.6088629888623855,
+  "average_weekly_turnover": 0.842080807857073,
+  "total_transaction_cost": 0.0,
+  "total_slippage_cost": 0.0,
+  "ending_benchmark_value": 1.64941543772565
+}

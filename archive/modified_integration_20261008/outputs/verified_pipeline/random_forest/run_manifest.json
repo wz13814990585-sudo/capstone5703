@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "quick": true,
+  "source_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "results": [
+    {
+      "model": "random_forest_7_rolling_3y",
+      "mode": "rolling_3y",
+      "feature_set": "7",
+      "status": "selected",
+      "candidate": 1,
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "n_estimators": 8
+      },
+      "validation_passed_gate": false,
+      "development_shortlist_fallbacks": 1
+    },
+    {
+      "model": "random_forest_7_rolling_6y",
+      "mode": "rolling_6y",
+      "feature_set": "7",
+      "status": "selected",
+      "candidate": 1,
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "n_estimators": 8
+      },
+      "validation_passed_gate": false,
+      "development_shortlist_fallbacks": 1
+    },
+    {
+      "model": "random_forest_7_fixed",
+      "mode": "fixed",
+      "feature_set": "7",
+      "status": "selected",
+      "candidate": 1,
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "n_estimators": 8
+      },
+      "validation_passed_gate": true,
+      "development_shortlist_fallbacks": 1
+    }
+  ]
+}

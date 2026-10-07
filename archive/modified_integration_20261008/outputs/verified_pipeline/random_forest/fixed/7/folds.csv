@@ -1,0 +1,4 @@
+﻿fit_date,training_window_start,training_first_date,training_last_date,latest_training_label,training_rows,prediction_first_date,prediction_last_date,prediction_weeks,stage
+2022-09-01,2016-09-01,2016-09-02,2022-08-19,2022-08-26,14503,2022-09-02,2024-08-23,104,development
+2024-09-01,2016-09-01,2016-09-02,2024-08-23,2024-08-30,20981,2024-09-06,2025-08-22,51,validation
+2025-09-01,2016-09-01,2016-09-02,2025-08-22,2025-08-29,24217,2025-09-05,2026-08-21,51,final_test

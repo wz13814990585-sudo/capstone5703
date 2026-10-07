@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "quick": true,
+  "source_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "results": [
+    {
+      "model": "xgboost_7_rolling",
+      "mode": "rolling",
+      "feature_set": "7",
+      "status": "no_candidate_passed",
+      "passing_candidates": 0
+    },
+    {
+      "model": "xgboost_7_fixed",
+      "mode": "fixed",
+      "feature_set": "7",
+      "status": "selected",
+      "passing_candidates": 1,
+      "candidate": 1,
+      "parameters": {
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "n_estimators": 8
+      }
+    }
+  ]
+}

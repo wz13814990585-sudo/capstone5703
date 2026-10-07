@@ -1,0 +1,47 @@
+{
+  "source": "/Users/april/Desktop/USYD 2026s2/5703/week8_code/data/test_45_factors_weekly.csv",
+  "source_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "quick": true,
+  "feature_sets": {
+    "7": [
+      "revenue_growth_yoy",
+      "ret_120d",
+      "cashflow_to_assets",
+      "ret_1d",
+      "ret_5d",
+      "close_location_value",
+      "body_range_ratio"
+    ]
+  },
+  "rolling_years": 3,
+  "rolling_cadence": "calendar month, split by stage",
+  "stage_dates": {
+    "7": {
+      "development": "2019-09-06 00:00:00",
+      "validation": "2024-09-06 00:00:00",
+      "final_test": "2025-09-05 00:00:00"
+    }
+  },
+  "candidate_grid": [
+    {
+      "max_depth": 2,
+      "min_child_weight": 5,
+      "n_estimators": 8
+    }
+  ],
+  "fixed_parameters": {
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "tree_method": "hist",
+    "n_jobs": 4,
+    "random_state": 42,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0,
+    "reg_lambda": 10
+  },
+  "label_rule": "next same-ticker observation 5–14 days later; label_end_date < fit_date",
+  "selection": "Development gate, then Top5 Excess/Rank IC/Rank ICIR descending; no fallback",
+  "selection_boundary": "Original Development signal dates retained; no new label-boundary purge"
+}

@@ -1,0 +1,14 @@
+{
+  "input_filename": "test_45_factors_weekly.csv",
+  "input_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "python_version": "3.12.14",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.5.3",
+  "xgboost_version": "3.4.1",
+  "formal_prediction_weeks": 366,
+  "formal_prediction_rows": 22430,
+  "refit_model_instances": 53,
+  "ensemble_refit_blocks": 15,
+  "target2_used": false,
+  "backtest_performed": false
+}

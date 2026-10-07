@@ -1,0 +1,43 @@
+{
+  "strategies": [
+    "Top5",
+    "Top10",
+    "Top5_PositiveScore",
+    "Top10_PositiveScore",
+    "Top5_NoLoss4w",
+    "Top10_NoLoss4w",
+    "Top5_NoLoss13w",
+    "Top10_NoLoss13w",
+    "Top5_RankWeighted",
+    "Top5_LowVol26w",
+    "Top5_RankRisk26w",
+    "Top5_Buffer10",
+    "Top5_Rebalance2w",
+    "Top5_Rebalance4w",
+    "Top5_Trend26w"
+  ],
+  "rules": {
+    "Top5_LowVol26w": "按预测选前5只拥有26周完整历史波动率的股票，按波动率倒数分配权重，单只上限35%；不足5只时股票总预算为只数/5，余款现金。",
+    "Top5_RankRisk26w": "同一可用股票池取前5名，按(6-排名)/过去26周周收益标准差分配权重，单只上限35%；不足5只时股票总预算为只数/5。",
+    "Top5_Buffer10": "初次选前5；每周保留仍在当前前10名的持仓，空位按当前排名补齐，然后等权配平，每只20%。",
+    "Top5_Rebalance2w": "首次可用信号从现金买前5，每隔2个日历周重新等权选股；期间持仓及现金权重自然漂移，不按新排名交易。缺信号清仓，恢复信号立即建仓并重设调仓计时。",
+    "Top5_Rebalance4w": "同上，每隔4个日历周调仓。",
+    "Top5_Trend26w": "以原始股票池截至当周的可核验复权价格构造等权收益指数；指数高于含当周的过去26周均线时等权买Top5，否则持现金。",
+    "Consensus": "四个固定配置的当周自身股票池排名百分位等权平均，分数保留12位小数统一数值并列，再按股票代码打破并列；仅使用四方都有预测的股票和日期，未按本次成绩选择组件。派生序列也评估全部15策略。"
+  },
+  "consensus_components": [
+    "RF-R3-F11",
+    "RIDGE-R3-F11",
+    "XGB-R3-F11",
+    "RANKER-V2-ENSEMBLE"
+  ],
+  "consensus_component_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "selection": "fixed R3-F11 designs plus original Ranker, no outcome-based selection",
+  "risk_window": 26,
+  "stock_cap": 0.35
+}

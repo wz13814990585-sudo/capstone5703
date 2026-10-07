@@ -1,0 +1,27 @@
+{
+  "strategies": {
+    "Top5": "按分数降序、代码升序选前5，每只20%，缺额留现金。",
+    "Top10": "按分数降序、代码升序选前10，每只10%，缺额留现金。",
+    "Top5_PositiveScore": "先保留分数>0的股票，再选前5，每只20%。",
+    "Top10_PositiveScore": "先保留分数>0的股票，再选前10，每只10%。",
+    "Top5_NoLoss4w": "先保留截至信号日过去4周价格收益非负的股票，再选前5，每只20%。",
+    "Top10_NoLoss4w": "先保留截至信号日过去4周价格收益非负的股票，再选前10，每只10%。",
+    "Top5_NoLoss13w": "先保留截至信号日过去13周价格收益非负的股票，再选前5，每只20%。",
+    "Top10_NoLoss13w": "先保留截至信号日过去13周价格收益非负的股票，再选前10，每只10%。",
+    "Top5_RankWeighted": "前5按5:4:3:2:1/15加权，缺额名次的权重留现金。",
+    "Top5_LowVol26w": "在有26周完整收益历史的股票中选前5，波动率倒数加权，单股上限35%，不足5只时预算为只数/5。",
+    "Top5_RankRisk26w": "在有26周完整收益历史的股票中选前5，按(6-名次)/波动率加权，单股上限35%，不足5只时预算为只数/5。",
+    "Top5_Buffer10": "保留仍在当前前10的原持仓，按排名补足5只，每只20%。",
+    "Top5_Rebalance2w": "从首次信号起每2周选前5、每只20%；间隔周权重漂移，缺信号清仓，恢复信号立即重启。",
+    "Top5_Rebalance4w": "从首次信号起每4周选前5、每只20%；间隔周权重漂移，缺信号清仓，恢复信号立即重启。",
+    "Top5_Trend26w": "截至信号日的股票等权指数高于其26周均线时选前5，每只20%，否则现金。"
+  },
+  "frequency": "weekly",
+  "periods_per_year": 52,
+  "target": "next global week adjusted-close log return",
+  "cost": "(1 - traded_weight * bps / 10000) * (1 + gross_return) - 1",
+  "benchmark": "equal-weight gross return over valid adjacent price pairs",
+  "missing_selected_next_price": "error, never filter using future availability",
+  "cash_interest": 0,
+  "final_liquidation_cost": false
+}

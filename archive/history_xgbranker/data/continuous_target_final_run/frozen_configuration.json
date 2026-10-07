@@ -1,0 +1,128 @@
+{
+  "target": {
+    "column": "target",
+    "definition": "ln(AdjClose(t+1) / AdjClose(t))",
+    "label_type": "continuous_next_week_log_return",
+    "target2_used": false,
+    "classification_or_relevance_bins_used": false
+  },
+  "prediction_timing": {
+    "decision_time": "after each weekly close",
+    "label_observability_rule": "label_end_week <= refit_week",
+    "formal_ensemble_start_week": 156,
+    "evaluation_end_week": 521
+  },
+  "feature_transform": "weekly cross-sectional percentile rank",
+  "refit_interval_weeks": 26,
+  "random_seed": 5703,
+  "components": [
+    {
+      "component_id": "model_1_w156_five_factors",
+      "features": [
+        "revenue_growth_yoy",
+        "operating_profitability",
+        "cashflow_to_assets",
+        "debt_to_assets",
+        "asset_growth_yoy"
+      ],
+      "resolved_features": [
+        "csrank__revenue_growth_yoy",
+        "csrank__operating_profitability",
+        "csrank__cashflow_to_assets",
+        "csrank__debt_to_assets",
+        "csrank__asset_growth_yoy"
+      ],
+      "training_window_weeks": 156,
+      "params": {
+        "objective": "rank:pairwise",
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 2,
+        "learning_rate": 0.025,
+        "n_estimators": 360,
+        "min_child_weight": 20,
+        "reg_alpha": 0.0,
+        "reg_lambda": 3.0,
+        "gamma": 0.0
+      }
+    },
+    {
+      "component_id": "model_2_w52_two_factors",
+      "features": [
+        "operating_profitability",
+        "debt_to_assets"
+      ],
+      "resolved_features": [
+        "csrank__operating_profitability",
+        "csrank__debt_to_assets"
+      ],
+      "training_window_weeks": 52,
+      "params": {
+        "objective": "rank:pairwise",
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 240,
+        "min_child_weight": 20,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0
+      }
+    },
+    {
+      "component_id": "model_3_w52_five_factors_regularized",
+      "features": [
+        "revenue_growth_yoy",
+        "operating_profitability",
+        "cashflow_to_assets",
+        "debt_to_assets",
+        "asset_growth_yoy"
+      ],
+      "resolved_features": [
+        "csrank__revenue_growth_yoy",
+        "csrank__operating_profitability",
+        "csrank__cashflow_to_assets",
+        "csrank__debt_to_assets",
+        "csrank__asset_growth_yoy"
+      ],
+      "training_window_weeks": 52,
+      "params": {
+        "objective": "rank:pairwise",
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "n_estimators": 280,
+        "min_child_weight": 20,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "gamma": 0.05
+      }
+    }
+  ],
+  "ensemble": {
+    "method": "weekly percentile-rank then equal-weight mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "prediction_value": "ensemble_ranking_score"
+  },
+  "stability_fold_boundaries": [
+    156,
+    247,
+    338,
+    430,
+    522
+  ],
+  "parameters_frozen_before_final_run": true,
+  "backtest_performed": false
+}

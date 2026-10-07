@@ -1,0 +1,57 @@
+{
+  "protocol": "ridge_xgb_aligned_v2",
+  "source": "/Users/april/Desktop/USYD 2026s2/5703/week8_code/data/test_45_factors_weekly.csv",
+  "source_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "features": {
+    "Ridge_7": [
+      "revenue_growth_yoy",
+      "ret_120d",
+      "cashflow_to_assets",
+      "ret_1d",
+      "ret_5d",
+      "close_location_value",
+      "body_range_ratio"
+    ]
+  },
+  "quick": true,
+  "alpha_grid": [
+    0.01,
+    1000.0
+  ],
+  "stages": [
+    [
+      "development",
+      "2019-09-01 00:00:00",
+      "2024-09-01 00:00:00"
+    ],
+    [
+      "validation",
+      "2024-09-01 00:00:00",
+      "2025-09-01 00:00:00"
+    ],
+    [
+      "final_test",
+      "2025-09-01 00:00:00",
+      "2026-09-01 00:00:00"
+    ]
+  ],
+  "selection_cutoff": "2024-09-01 00:00:00",
+  "selection": "Rank IC>0, unannualized Rank ICIR>=0.05, Positive Rank IC>=0.50; then descending Top5 Excess, Rank IC, Rank ICIR; no fallback",
+  "fixed": "All available history, refit at 2019-09-01, 2024-09-01, 2025-09-01; freeze coefficients within stage",
+  "rolling": "Latest three calendar years; continuous four-observation refit grid",
+  "training_label_rule": "label_end_date < fit_date",
+  "selection_label_rule": "label_end_date < 2024-09-01; crossing-boundary dev labels purged",
+  "metrics": "ICIR and Rank ICIR unannualized; Information Ratio annualized sqrt(52); Top5 Excess is CAGR of weekly active returns",
+  "retained_differences_from_supplied_xgboost": [
+    "Rolling grid is four observations, not natural months, per prior team agreement.",
+    "Source target is verified against next global-week same-stock adjusted price; same 82 excluded rows retained.",
+    "Development labels crossing selection cutoff are excluded to prevent boundary lookahead.",
+    "Ridge applies training-only standardization; tree model does not need it.",
+    "Ridge evaluates six alpha values, not twelve tree parameter sets."
+  ],
+  "caveats": [
+    "Full-period feature screening and repeated final-test inspection make this exploratory.",
+    "Prior universe/cleaning/financial publication timestamps not re-audited.",
+    "Same-close execution and trading costs not verified; signal returns are not executable performance."
+  ]
+}

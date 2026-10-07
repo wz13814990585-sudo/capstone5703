@@ -1,0 +1,22 @@
+{
+  "unit_tests": 29,
+  "unit_tests_passed": true,
+  "pipeline_status": "completed",
+  "quick_run": true,
+  "algorithms": 4,
+  "selected_configurations": 7,
+  "prediction_rows": 84277,
+  "model_summary_rows": 7,
+  "stage_summary_rows": 19,
+  "backtest_summary_rows": 315,
+  "strategies": 15,
+  "transaction_cost_bps": [
+    0,
+    10,
+    25
+  ],
+  "ranker_full_rows": 22430,
+  "ranker_max_score_difference": 0.0,
+  "full_regression_grid_rerun": false,
+  "network_refresh_performed": false
+}

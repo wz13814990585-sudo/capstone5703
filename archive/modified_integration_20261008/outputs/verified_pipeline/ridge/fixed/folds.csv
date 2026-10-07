@@ -1,0 +1,4 @@
+﻿mode,model,fold_id,fit_date,train_start,train_end,last_train_label,train_rows,prediction_start,prediction_end,prediction_weeks,alpha
+fixed,Ridge_7,0,2019-09-01,2016-09-02,2019-08-23,2019-08-30,5220,2019-09-06,2024-08-30,261,0.01
+fixed,Ridge_7,1,2024-09-01,2016-09-02,2024-08-23,2024-08-30,20973,2024-09-06,2025-08-29,52,0.01
+fixed,Ridge_7,2,2025-09-01,2016-09-02,2025-08-22,2025-08-29,24203,2025-09-05,2026-08-21,51,0.01

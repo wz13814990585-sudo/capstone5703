@@ -1,0 +1,2 @@
+model,evaluation_scope,evaluation_start_week,evaluation_end_week,prediction_weeks,IC,ICIR,Rank_IC,Rank_ICIR,Positive_IC_Ratio,Positive_Rank_IC_Ratio,Median_Rank_IC,Weekly_Rank_IC_Std,Best_Weekly_Rank_IC,Worst_Weekly_Rank_IC,prediction_rows
+final_three_model_ensemble,formal_period,156,521,366,0.03700067159545687,0.2114688332218837,0.03444870347454602,0.19955304434383161,0.5901639344262295,0.6010928961748634,0.04506620515440361,0.17262930559551176,0.7085148750282976,-0.5472177490533006,22430

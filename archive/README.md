@@ -1,0 +1,7 @@
+# 非正式入口资料
+
+original_source_before_integration.zip是整合前源文件快照，原路径与SHA256在original_source_sha256.json。当前11个原Python文件从用户原路径恢复，逐字节核对。
+
+history_xgbranker/是用户原历史调优资料；它不是当前默认训练入口，但保留供追溯。modified_integration_20261008/是之前包含修复、重写与新增功能的版本及其结果，现仅归档，当前正式入口不调用它。
+
+cleanup_manifest.json描述的是之前修改版的删除操作，不能据此解释当前仅整合版的变更。本次迁移和验证以根INTEGRATION.md与integration/source_manifest.json为准。

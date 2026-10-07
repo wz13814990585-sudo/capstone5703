@@ -1,0 +1,13 @@
+check,value,status
+input_rows,27651,verified
+unique_weeks,522,verified
+unique_tickers,66,verified
+target_rows_verified_from_next_row,27569,verified
+target_rows_supplied_upstream,82,accepted_by_user
+maximum_verified_target_error,4.543349203800506e-16,verified
+target2_available_in_input,True,informational
+target2_used_by_either_experiment,False,verified
+evaluation_target_for_both_experiments,continuous target,verified
+experiment_id,experiment_D_relevance5,configured
+training_label_mode,weekly_relevance_5,configured
+weekly_relevance_bins,5,configured

@@ -1,0 +1,9 @@
+check,value,status
+input_rows,27651,verified
+unique_weeks,522,verified
+unique_tickers,66,verified
+target_rows_verified,27569,verified
+target_rows_supplied_upstream,82,accepted
+maximum_verified_target_error,4.543349203800506e-16,verified
+target2_used,False,verified
+training_relevance_bins,5,configured

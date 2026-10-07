@@ -1,0 +1,11 @@
+{
+  "package": "submission_only.zip",
+  "sha256": "415e03f6f7ae20a60e755bb89d95791097fdedfe74405a0df6df27441110cc71",
+  "bytes": 73012376,
+  "files": 2269,
+  "original_source_and_data_hashes_verified_inside_zip": true,
+  "modified_implementation_excluded": true,
+  "missing_original_backtest_project_disclosed": true,
+  "extracted_submission_integrity_verification_passed": true,
+  "extracted_submission_tests_passed": 4
+}

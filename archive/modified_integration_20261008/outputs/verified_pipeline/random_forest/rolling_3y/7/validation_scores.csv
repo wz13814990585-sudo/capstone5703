@@ -1,0 +1,2 @@
+﻿candidate,max_depth,min_samples_leaf,max_features,n_estimators,Model Name,Dataset,IC,ICIR,Rank IC,Rank ICIR,Positive Rank IC Ratio,Valid Rank IC Weeks,Annualized Return,Benchmark Annualized Return,Excess Annualized Return,Information Ratio,Weeks,Observations,RMSE,Pass Screening,Finite Return
+1,4,10,sqrt,8,Random Forest,Validation,-0.083254882858932,-0.3174670938666611,0.0031641950265375793,0.022286178617749668,0.75,8,0.3023809920958216,-0.007050281690749172,0.30943127378657076,1.9375157314594391,8,496,0.045242794364843054,False,True

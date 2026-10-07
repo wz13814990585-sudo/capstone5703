@@ -1,0 +1,74 @@
+[
+  {
+    "removed_path": "train_ridge_comparison.py",
+    "backup_member": "train_ridge_comparison.py",
+    "sha256": "38a6d9e5cc74381350564bfb6332f447602b91b144b8950a801ca9a3824709ac",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "random_forest.py",
+    "backup_member": "random_forest.py",
+    "sha256": "1e6acdabb4c354047a001f2c4f4c7e603b001a6b2c8e617a49bebef8bb2b6e29",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "train_xgboost_comparison(2).py",
+    "backup_member": "train_xgboost_comparison(2).py",
+    "sha256": "f4ad5d53dc5a4ff097c3dd443c7439a59e8ab735238555f414e9095845a596f3",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "README(1).md",
+    "backup_member": "README(1).md",
+    "sha256": "5d26ad713e1e4520d7f00d1bd4c4d3c48fe972d548b85390c725e3cf58a46f2d",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "xgboost_ranker/xgboost_ranker.py",
+    "backup_member": "XGboost_ranker/xgboost_ranker.py",
+    "sha256": "6dfd9c7d02076015c0dc9fabec4f2815fd31543d69511154993503a59a58727e",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "basic data/collect_sec_fundamentals.py",
+    "backup_member": "basic data/collect_sec_fundamentals.py",
+    "sha256": "f5a22ec6b9c0a6466c215d29c9b5dd56103a31e4b50771502ce49372bcd6e70c",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "basic data/build_external_factors.py",
+    "backup_member": "basic data/build_external_factors.py",
+    "sha256": "a28c3ce9e13524a842194296b643a9c68a8242fe1b9900e3434e543ac80ef21a",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "basic data/fetch_and_clean.py",
+    "backup_member": "basic data/fetch_and_clean.py",
+    "sha256": "05990f21a2aa995b200f2927cdb82ca3f344e40e4de9e220dd8b575a1543e133",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "basic data/build_technical_factors.py",
+    "backup_member": "basic data/build_technical_factors.py",
+    "sha256": "36879414ff98f96b5f9654dffeb12b662127fd2a664fce10f2dbd62319f8474b",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "reports/reference_evaluation/核心代码参考/portfolio_strategies.py",
+    "backup_member": "报告章节材料/核心代码参考/portfolio_strategies.py",
+    "sha256": "9003a5b041b630fea103232280ce3d7a51e0b4d3ecc21201cad4ebae70ec444e",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "reports/reference_evaluation/核心代码参考/README.md",
+    "backup_member": "报告章节材料/核心代码参考/README.md",
+    "sha256": "ef0432752af330a9bfd5069c7be30dee78b251b7eeca00b73f5f4fec38f25fa8",
+    "reason": "superseded by integrated functional modules"
+  },
+  {
+    "removed_path": "reports/reference_evaluation/核心代码参考/full_history_backtest.py",
+    "backup_member": "报告章节材料/核心代码参考/full_history_backtest.py",
+    "sha256": "9e6e4a736e8fb395d33899652dfecce09cd360ec05d0146e7b94c70933385029",
+    "reason": "superseded by integrated functional modules"
+  }
+]

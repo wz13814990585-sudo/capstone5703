@@ -1,0 +1,42 @@
+test_bad_existing_label_is_rejected (data_processing.tests.test_panel.WeeklyPanelTest.test_bad_existing_label_is_rejected) ... ok
+test_missing_calendar_week_is_not_bridged (data_processing.tests.test_panel.WeeklyPanelTest.test_missing_calendar_week_is_not_bridged) ... ok
+test_holdout_prices_cannot_change_selection (single_factor_analysis.tests.test_screening.ScreeningTest.test_holdout_prices_cannot_change_selection) ... ok
+test_all_missing_handling_is_model_specific (model_training.test_contracts.TrainingContractTests.test_all_missing_handling_is_model_specific) ... ok
+test_original_label_boundary_difference_is_preserved (model_training.test_contracts.TrainingContractTests.test_original_label_boundary_difference_is_preserved) ... ok
+test_prediction_csv_retains_quick_flag_and_empty_schema (model_training.test_contracts.TrainingContractTests.test_prediction_csv_retains_quick_flag_and_empty_schema) ... ok
+test_preprocessing_uses_training_statistics_only (model_training.test_contracts.TrainingContractTests.test_preprocessing_uses_training_statistics_only) ... ok
+test_ridge_unpenalized_intercept_and_independent_solver (model_training.test_contracts.TrainingContractTests.test_ridge_unpenalized_intercept_and_independent_solver) ... ok
+test_selection_gate_does_not_invent_ridge_fallback (model_training.test_contracts.TrainingContractTests.test_selection_gate_does_not_invent_ridge_fallback) ... ok
+test_standard_prediction_identity_distinguishes_experiments (model_training.test_contracts.TrainingContractTests.test_standard_prediction_identity_distinguishes_experiments) ... ok
+test_xgboost_candidate_only_fits_requested_stage (model_training.test_contracts.TrainingContractTests.test_xgboost_candidate_only_fits_requested_stage) ... ok
+test_duplicate_keys_fail_but_models_can_share_keys (model_evaluation.tests.test_metrics.MetricsTest.test_duplicate_keys_fail_but_models_can_share_keys) ... ok
+test_equal_weight_weeks_and_constant_cross_section (model_evaluation.tests.test_metrics.MetricsTest.test_equal_weight_weeks_and_constant_cross_section) ... ok
+test_explicit_missing_end_date_excludes_unrealized_label (model_evaluation.tests.test_metrics.MetricsTest.test_explicit_missing_end_date_excludes_unrealized_label) ... ok
+test_ranker_never_compares_dimensionless_score_to_return (model_evaluation.tests.test_metrics.MetricsTest.test_ranker_never_compares_dimensionless_score_to_return) ... ok
+test_simple_returns_are_converted_without_changing_ranking_scores (model_evaluation.tests.test_metrics.MetricsTest.test_simple_returns_are_converted_without_changing_ranking_scores) ... ok
+test_cash_shortfall_and_cost_are_hand_calculated (backtesting.tests.test_engine.BacktestTest.test_cash_shortfall_and_cost_are_hand_calculated) ... ok
+test_drawdown_includes_initial_nav_and_delay_keeps_calendar (backtesting.tests.test_engine.BacktestTest.test_drawdown_includes_initial_nav_and_delay_keeps_calendar) ... ok
+test_future_changes_do_not_change_current_weights_or_risk_inputs (backtesting.tests.test_engine.BacktestTest.test_future_changes_do_not_change_current_weights_or_risk_inputs) ... ok
+test_rebalance_drift_and_gap_restart (backtesting.tests.test_engine.BacktestTest.test_rebalance_drift_and_gap_restart) ... ok
+test_selected_missing_future_price_raises_without_survivor_filter (backtesting.tests.test_engine.BacktestTest.test_selected_missing_future_price_raises_without_survivor_filter) ... ok
+test_terminal_prediction_is_audited_not_return (backtesting.tests.test_engine.BacktestTest.test_terminal_prediction_is_audited_not_return) ... ok
+test_window_starts_with_cash_and_new_rebalance_clock (backtesting.tests.test_engine.BacktestTest.test_window_starts_with_cash_and_new_rebalance_clock) ... ok
+test_wrong_labels_are_rejected_and_all_strategies_exist (backtesting.tests.test_engine.BacktestTest.test_wrong_labels_are_rejected_and_all_strategies_exist) ... ok
+test_evaluation_inherits_quick_provenance (tests.test_entrypoint.EntryPointTests.test_evaluation_inherits_quick_provenance) ... Output: /private/var/folders/9y/_hkrc1ds3g3br8qsfpfb5x9c0000gn/T/tmpdqa2ocrq/evaluation
+Model evaluation completed.
+Completed: /private/var/folders/9y/_hkrc1ds3g3br8qsfpfb5x9c0000gn/T/tmpdqa2ocrq/evaluation
+ok
+test_existing_run_cannot_be_overwritten (tests.test_entrypoint.EntryPointTests.test_existing_run_cannot_be_overwritten) ... ok
+test_failure_records_failed_manifest (tests.test_entrypoint.EntryPointTests.test_failure_records_failed_manifest) ... Output: /private/var/folders/9y/_hkrc1ds3g3br8qsfpfb5x9c0000gn/T/tmpcyz6eqis/failed
+ok
+test_no_selected_models_is_a_successful_empty_run (tests.test_entrypoint.EntryPointTests.test_no_selected_models_is_a_successful_empty_run) ... Output: /private/var/folders/9y/_hkrc1ds3g3br8qsfpfb5x9c0000gn/T/tmpbnekqhve/empty_run
+Data audit completed.
+No candidates passed selection. Empty predictions saved; evaluation/backtest skipped.
+Completed: /private/var/folders/9y/_hkrc1ds3g3br8qsfpfb5x9c0000gn/T/tmpbnekqhve/empty_run
+ok
+test_ranker_rejects_existing_output_before_training (tests.test_entrypoint.EntryPointTests.test_ranker_rejects_existing_output_before_training) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.353s
+
+OK

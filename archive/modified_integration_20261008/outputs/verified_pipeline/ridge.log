@@ -1,0 +1,8 @@
+rolling Ridge_7: development block 0
+rolling Ridge_7: alpha=1000.0; passed 2/2
+fixed Ridge_7: development block 0
+fixed Ridge_7: alpha=0.01; passed 2/2
+   mode   model   status   alpha  passing_candidates    Dataset       IC     ICIR  Rank IC  Rank ICIR  Annualized Return  Information Ratio  Top5 Excess  Positive Rank IC  weeks  rows  benchmark_annualized_return  legacy_excess_annualized_return_pp
+rolling Ridge_7 selected 1000.00                   2 final_test 0.023551 0.113567 0.058672   0.219244          -0.417161          -1.516868    -0.181330          0.571429      7   439                     -0.29309                          -12.407015
+  fixed Ridge_7 selected    0.01                   2 final_test 0.041127 0.191739 0.039927   0.229691          -0.162961          -1.204822    -0.212253          0.647059     51  3304                      0.06525                          -22.821194
+Completed: /Users/april/Desktop/USYD 2026s2/5703/week8_code/outputs/verified_pipeline/ridge

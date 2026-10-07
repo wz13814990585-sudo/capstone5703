@@ -1,0 +1,15 @@
+{
+  "model": "random_forest_7_rolling_3y",
+  "mode": "rolling_3y",
+  "feature_set": "7",
+  "status": "selected",
+  "candidate": 1,
+  "parameters": {
+    "max_depth": 4,
+    "min_samples_leaf": 10,
+    "max_features": "sqrt",
+    "n_estimators": 8
+  },
+  "validation_passed_gate": false,
+  "development_shortlist_fallbacks": 1
+}

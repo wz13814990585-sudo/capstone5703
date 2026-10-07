@@ -1,0 +1,503 @@
+{
+  "search_config": {
+    "evaluation_start_week": 260,
+    "evaluation_end_week": 522,
+    "fold_boundaries": [
+      260,
+      325,
+      390,
+      456,
+      522
+    ],
+    "baseline_window_weeks": 104,
+    "baseline_refit_interval_weeks": 13,
+    "window_candidates": [
+      52,
+      78,
+      104,
+      130,
+      156,
+      208,
+      "all_history"
+    ],
+    "refit_interval_candidates": [
+      2,
+      4,
+      8,
+      13,
+      26
+    ],
+    "top_algorithms_for_joint_search": 3,
+    "top_schedules_for_joint_search": 3,
+    "top_features_for_joint_search": 3,
+    "top_single_models_for_ensemble": 5
+  },
+  "algorithm_candidates": {
+    "current_pairwise_d4": {
+      "candidate_id": "current_pairwise_d4",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 1.0,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 160,
+        "min_child_weight": 10
+      }
+    },
+    "pairwise_d2": {
+      "candidate_id": "pairwise_d2",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "n_estimators": 240,
+        "min_child_weight": 10
+      }
+    },
+    "pairwise_d3": {
+      "candidate_id": "pairwise_d3",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 200,
+        "min_child_weight": 10
+      }
+    },
+    "pairwise_d5": {
+      "candidate_id": "pairwise_d5",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "n_estimators": 220,
+        "min_child_weight": 10
+      }
+    },
+    "pairwise_d3_mcw20": {
+      "candidate_id": "pairwise_d3_mcw20",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 240,
+        "min_child_weight": 20
+      }
+    },
+    "pairwise_d3_mcw40": {
+      "candidate_id": "pairwise_d3_mcw40",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 3.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 240,
+        "min_child_weight": 40
+      }
+    },
+    "pairwise_d3_regularized": {
+      "candidate_id": "pairwise_d3_regularized",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "gamma": 0.05,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "n_estimators": 280,
+        "min_child_weight": 20
+      }
+    },
+    "pairwise_d2_slow": {
+      "candidate_id": "pairwise_d2_slow",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 3.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 2,
+        "learning_rate": 0.025,
+        "n_estimators": 360,
+        "min_child_weight": 20
+      }
+    },
+    "pairwise_d4_fast": {
+      "candidate_id": "pairwise_d4_fast",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.08,
+        "n_estimators": 100,
+        "min_child_weight": 15
+      }
+    },
+    "pairwise_leaves15": {
+      "candidate_id": "pairwise_leaves15",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 0,
+        "max_leaves": 15,
+        "grow_policy": "lossguide",
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15
+      }
+    },
+    "pairwise_leaves31": {
+      "candidate_id": "pairwise_leaves31",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 3.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 0,
+        "max_leaves": 31,
+        "grow_policy": "lossguide",
+        "learning_rate": 0.03,
+        "n_estimators": 240,
+        "min_child_weight": 20
+      }
+    },
+    "ndcg_d2_b5": {
+      "candidate_id": "ndcg_d2_b5",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 2,
+        "learning_rate": 0.04,
+        "n_estimators": 260,
+        "min_child_weight": 10
+      }
+    },
+    "ndcg_d3_b5": {
+      "candidate_id": "ndcg_d3_b5",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 10
+      }
+    },
+    "ndcg_d4_b5": {
+      "candidate_id": "ndcg_d4_b5",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "n_estimators": 240,
+        "min_child_weight": 15
+      }
+    },
+    "ndcg_d3_b10": {
+      "candidate_id": "ndcg_d3_b10",
+      "objective": "rank:ndcg",
+      "relevance_bins": 10,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15
+      }
+    },
+    "ndcg_d4_b10": {
+      "candidate_id": "ndcg_d4_b10",
+      "objective": "rank:ndcg",
+      "relevance_bins": 10,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "n_estimators": 240,
+        "min_child_weight": 20
+      }
+    },
+    "ndcg_mean_pairs4": {
+      "candidate_id": "ndcg_mean_pairs4",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15,
+        "lambdarank_pair_method": "mean",
+        "lambdarank_num_pair_per_sample": 4
+      }
+    },
+    "ndcg_mean_pairs8": {
+      "candidate_id": "ndcg_mean_pairs8",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15,
+        "lambdarank_pair_method": "mean",
+        "lambdarank_num_pair_per_sample": 8
+      }
+    },
+    "ndcg_topk_pairs8": {
+      "candidate_id": "ndcg_topk_pairs8",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15,
+        "lambdarank_pair_method": "topk",
+        "lambdarank_num_pair_per_sample": 8
+      }
+    },
+    "ndcg_topk_pairs16": {
+      "candidate_id": "ndcg_topk_pairs16",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 220,
+        "min_child_weight": 15,
+        "lambdarank_pair_method": "topk",
+        "lambdarank_num_pair_per_sample": 16
+      }
+    }
+  },
+  "feature_candidates": {
+    "b2_f4_f5_add_m04": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "macro_dgs10_change_5obs"
+    ],
+    "b1_f3_f4_f5": [
+      "operating_profitability",
+      "cashflow_to_assets",
+      "debt_to_assets"
+    ],
+    "b1_f3_f4_f5_f6": [
+      "operating_profitability",
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "asset_growth_yoy"
+    ],
+    "b1_f4_f5": [
+      "cashflow_to_assets",
+      "debt_to_assets"
+    ],
+    "b3_f4_f5_add_t25_m04": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "close_location_value",
+      "macro_dgs10_change_5obs"
+    ],
+    "b2_f4_f5_add_t16": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "realized_vol_20"
+    ],
+    "b2_f4_f5_add_m03": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "macro_yield_spread_10y_2y"
+    ],
+    "b1_f1_f3_f4_f5_f6": [
+      "revenue_growth_yoy",
+      "operating_profitability",
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "asset_growth_yoy"
+    ],
+    "b1_f3_f5": [
+      "operating_profitability",
+      "debt_to_assets"
+    ],
+    "b1_f3_f4": [
+      "operating_profitability",
+      "cashflow_to_assets"
+    ],
+    "b2_f4_f5_add_m02": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "macro_vix_change_5obs"
+    ],
+    "fundamental_6": [
+      "revenue_growth_yoy",
+      "gross_margin_change_yoy",
+      "operating_profitability",
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "asset_growth_yoy"
+    ],
+    "b3_f4_f5_add_t21_m01_t25": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "volume_zscore_20",
+      "macro_vix_level",
+      "close_location_value"
+    ],
+    "b2_f4_f5_add_t21": [
+      "cashflow_to_assets",
+      "debt_to_assets",
+      "volume_zscore_20"
+    ]
+  },
+  "candidate_counts": {
+    "preprocessing": 3,
+    "hyperparameters": 20,
+    "time_schedules": 35,
+    "features": 14,
+    "joint_finalists": 27,
+    "ensembles": 26
+  },
+  "input_filename": "test_45_factors_weekly.csv",
+  "input_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "python_version": "3.12.14",
+  "xgboost_version": "3.4.1",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.5.3",
+  "research_only_no_untouched_holdout": true,
+  "backtest_performed": false
+}

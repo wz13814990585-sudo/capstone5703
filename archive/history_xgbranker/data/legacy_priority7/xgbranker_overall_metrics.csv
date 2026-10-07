@@ -1,0 +1,2 @@
+IC,ICIR,Rank_IC,Rank_ICIR,Positive_IC_Ratio,Positive_Rank_IC_Ratio,number_of_prediction_weeks,number_of_valid_IC_weeks,number_of_valid_Rank_IC_weeks,first_prediction_week,last_prediction_week,number_of_refit_models,rolling_window_weeks,refit_interval_weeks,forecast_horizon_weeks,warmup_to_oos_embargo_weeks
+0.01476686189710536,0.09276888246411262,0.012384714555878425,0.08631605233858043,0.5342465753424658,0.5315068493150685,365,365,365,157,521,92,156,4,1,1

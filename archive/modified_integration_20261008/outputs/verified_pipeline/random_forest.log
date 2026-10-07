@@ -1,0 +1,18 @@
+Random Forest rolling_3y/development: 15707 rows, 260 weeks
+Random Forest rolling_3y/validation: 3174 rows, 51 weeks
+Random Forest rolling_3y/final_test: 3306 rows, 51 weeks
+Random Forest rolling_6y/development: 6416 rows, 104 weeks
+Random Forest rolling_6y/validation: 3174 rows, 51 weeks
+Random Forest rolling_6y/final_test: 3306 rows, 51 weeks
+Random Forest fixed/development: 6416 rows, 104 weeks
+Random Forest fixed/validation: 3174 rows, 51 weeks
+Random Forest fixed/final_test: 3306 rows, 51 weeks
+Random Forest rolling_3y/7: candidate 1/1
+Selected 1: 0 passed screening; 1 fallback candidate(s) ranked by excess annualized return.
+Selected 1: 0 passed screening; 1 fallback candidate(s) ranked by excess annualized return.
+Random Forest rolling_6y/7: candidate 1/1
+Selected 1: 0 passed screening; 1 fallback candidate(s) ranked by excess annualized return.
+Selected 1: 0 passed screening; 1 fallback candidate(s) ranked by excess annualized return.
+Random Forest fixed/7: candidate 1/1
+Selected 1: 0 passed screening; 1 fallback candidate(s) ranked by excess annualized return.
+Selected 1: 1 passed screening; 0 fallback candidate(s) ranked by excess annualized return.

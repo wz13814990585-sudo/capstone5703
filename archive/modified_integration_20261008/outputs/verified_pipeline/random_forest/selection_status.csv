@@ -1,0 +1,4 @@
+﻿model,mode,feature_set,status,candidate,parameters,validation_passed_gate,development_shortlist_fallbacks
+random_forest_7_rolling_3y,rolling_3y,7,selected,1,"{'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt', 'n_estimators': 8}",False,1
+random_forest_7_rolling_6y,rolling_6y,7,selected,1,"{'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt', 'n_estimators': 8}",False,1
+random_forest_7_fixed,fixed,7,selected,1,"{'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt', 'n_estimators': 8}",True,1

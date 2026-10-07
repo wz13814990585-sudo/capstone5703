@@ -1,0 +1,10 @@
+phase,config_id,factor_set_name,training_mode,training_window_weeks,refit_interval_weeks,model_id,refit_week,refit_date,candidate_start_week,candidate_end_week,training_start_week,training_end_week,number_of_training_weeks,number_of_training_rows,number_of_features,objective,relevance_bins,finalist_role,is_primary_pre_holdout_selection
+final_holdout,fixed_all_history,fundamental_6,fixed,all_history,,fundamental_6_final_holdout_fixed_all_history_001,418,2024-09-06,0,417,0,416,417,20981,6,rank:pairwise,5,best_fixed_from_selection,False
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_001,418,2024-09-06,314,417,314,416,103,6354,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_002,431,2024-12-06,327,430,327,429,103,6354,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_003,444,2025-03-07,340,443,340,442,103,6363,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_004,457,2025-06-06,353,456,353,455,103,6379,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_005,470,2025-09-05,366,469,366,468,103,6382,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_006,483,2025-12-05,379,482,379,481,103,6403,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_007,496,2026-03-06,392,495,392,494,103,6447,6,rank:pairwise,5,best_rolling_from_selection,True
+final_holdout,rolling_w104_r13,fundamental_6,rolling,104,13.0,fundamental_6_final_holdout_rolling_w104_r13_008,509,2026-06-05,405,508,405,507,103,6489,6,rank:pairwise,5,best_rolling_from_selection,True

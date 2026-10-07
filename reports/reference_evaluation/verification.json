@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": 7809599,
+  "max_absolute_error": 4.921063556651006e-13,
+  "model_series": 59,
+  "scope": "all source-row accounting and complete date coverage; full-history stock-weight returns, drift, transaction costs and correlations; all 10bps period NAV/CAGR/drawdown and first trade costs; independent volatility caps, trend gates, all stateful window paths, direct realized prices and consensus percentiles",
+  "multistrategy_checks": 6481827,
+  "unchanged_baseline_rows": 27333,
+  "independent_cost_cases": 46380,
+  "phase_cases": 1404
+}

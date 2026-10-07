@@ -1,0 +1,2 @@
+﻿candidate,max_depth,min_child_weight,n_estimators,IC,ICIR,Rank IC,Rank ICIR,Annualized Return,Information Ratio,Top5 Excess,Positive Rank IC,passes_gate
+1,2,5,8,0.20439510477034634,0.6707455604971154,0.004668933534653946,0.0191615355735766,-0.07029879371582545,-0.22157738906278157,-0.029050342828677876,0.375,False

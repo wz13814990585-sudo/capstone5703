@@ -1,0 +1,3 @@
+﻿mode,model,status,alpha,passing_candidates
+rolling,Ridge_7,selected,1000.0,2
+fixed,Ridge_7,selected,0.01,2

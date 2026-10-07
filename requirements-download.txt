@@ -1,0 +1,4 @@
+-r requirements.txt
+# Optional: only for explicitly running the original data scripts.
+yfinance>=0.2
+exchange-calendars>=4.5

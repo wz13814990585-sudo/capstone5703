@@ -1,0 +1,10 @@
+Training model_1_w156_five_factors
+Training model_2_w52_two_factors
+Training model_3_w52_five_factors_regularized
+
+Final XGBRanker evaluation
+                     model evaluation_scope  evaluation_start_week  evaluation_end_week  prediction_weeks       IC     ICIR  Rank_IC  Rank_ICIR  Positive_IC_Ratio  Positive_Rank_IC_Ratio  Median_Rank_IC  Weekly_Rank_IC_Std  Best_Weekly_Rank_IC  Worst_Weekly_Rank_IC  prediction_rows
+final_three_model_ensemble    formal_period                    156                  521               366 0.037001 0.211469 0.034449   0.199553           0.590164                0.601093        0.045066            0.172629             0.708515             -0.547218            22430
+
+Metrics and predictions: /Users/april/Desktop/USYD 2026s2/5703/week8_code/outputs/verified_pipeline/xgboost_ranker
+Saved models: /Users/april/Desktop/USYD 2026s2/5703/week8_code/outputs/verified_pipeline/xgboost_ranker/models

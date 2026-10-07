@@ -1,0 +1,15 @@
+Output: /Users/april/Desktop/USYD 2026s2/5703/week8_code/outputs/verified_pipeline
+QUICK RUN: reduced training; results are for integration checks only.
+Data audit completed.
+Single-factor analysis completed.
+Training ridge ...
+  23,726 prediction rows; details: ridge.log
+Training random_forest ...
+  15,825 prediction rows; details: random_forest.log
+Training xgboost ...
+  22,296 prediction rows; details: xgboost.log
+Training xgboost_ranker ...
+  22,430 prediction rows; details: xgboost_ranker.log
+Model evaluation completed.
+Portfolio backtests completed.
+Completed: /Users/april/Desktop/USYD 2026s2/5703/week8_code/outputs/verified_pipeline

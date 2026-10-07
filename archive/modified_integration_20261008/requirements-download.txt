@@ -1,0 +1,6 @@
+# Only needed when explicitly refreshing upstream Yahoo/FRED/SEC data.
+-r requirements.txt
+yfinance>=0.2
+requests>=2.31
+exchange-calendars>=4.5
+

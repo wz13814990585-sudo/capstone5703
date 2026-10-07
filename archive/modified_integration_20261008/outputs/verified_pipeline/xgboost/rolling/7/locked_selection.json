@@ -1,0 +1,7 @@
+{
+  "model": "xgboost_7_rolling",
+  "mode": "rolling",
+  "feature_set": "7",
+  "status": "no_candidate_passed",
+  "passing_candidates": 0
+}

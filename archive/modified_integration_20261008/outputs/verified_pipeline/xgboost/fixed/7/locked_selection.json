@@ -1,0 +1,13 @@
+{
+  "model": "xgboost_7_fixed",
+  "mode": "fixed",
+  "feature_set": "7",
+  "status": "selected",
+  "passing_candidates": 1,
+  "candidate": 1,
+  "parameters": {
+    "max_depth": 2,
+    "min_child_weight": 5,
+    "n_estimators": 8
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": [
+    {
+      "mode": "fixed",
+      "model": "Ridge_7",
+      "status": "selected",
+      "alpha": 0.01,
+      "passing_candidates": 2
+    }
+  ],
+  "selection_cutoff": "2024-09-01 00:00:00"
+}

@@ -1,0 +1,8 @@
+factor_set_name,blocks,block_descriptions,number_of_features,feature_list
+fundamental_2,F,Fundamental: revenue growth and cash-flow-to-assets,2,"[""revenue_growth_yoy"", ""cashflow_to_assets""]"
+returns_3,R,Return horizons: 120-day momentum plus 1-day and 5-day returns,3,"[""ret_120d"", ""ret_1d"", ""ret_5d""]"
+price_action_2,P,Price action: close location and body/range ratio,2,"[""close_location_value"", ""body_range_ratio""]"
+fundamental_returns_5,F+R,Fundamental: revenue growth and cash-flow-to-assets | Return horizons: 120-day momentum plus 1-day and 5-day returns,5,"[""revenue_growth_yoy"", ""cashflow_to_assets"", ""ret_120d"", ""ret_1d"", ""ret_5d""]"
+fundamental_price_action_4,F+P,Fundamental: revenue growth and cash-flow-to-assets | Price action: close location and body/range ratio,4,"[""revenue_growth_yoy"", ""cashflow_to_assets"", ""close_location_value"", ""body_range_ratio""]"
+technical_5,R+P,Return horizons: 120-day momentum plus 1-day and 5-day returns | Price action: close location and body/range ratio,5,"[""ret_120d"", ""ret_1d"", ""ret_5d"", ""close_location_value"", ""body_range_ratio""]"
+priority_7,F+R+P,Fundamental: revenue growth and cash-flow-to-assets | Return horizons: 120-day momentum plus 1-day and 5-day returns | Price action: close location and body/range ratio,7,"[""revenue_growth_yoy"", ""ret_120d"", ""cashflow_to_assets"", ""ret_1d"", ""ret_5d"", ""close_location_value"", ""body_range_ratio""]"

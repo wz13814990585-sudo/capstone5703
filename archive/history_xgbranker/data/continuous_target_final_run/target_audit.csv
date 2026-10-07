@@ -1,0 +1,9 @@
+check,value,status
+input_rows,27651,verified
+unique_weeks,522,verified
+unique_tickers,66,verified
+target_rows_verified_from_next_row,27569,verified
+target_rows_supplied_upstream,82,accepted_by_user
+maximum_verified_target_error,4.543349203800506e-16,verified
+target2_used_by_model,False,verified
+classification_labels_used_by_model,False,verified

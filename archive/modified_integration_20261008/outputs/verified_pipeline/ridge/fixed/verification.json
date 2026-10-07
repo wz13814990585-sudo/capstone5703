@@ -1,0 +1,9 @@
+{
+  "prediction_readback_max_error": 6.782768791069316e-16,
+  "independent_solver_max_error": 2.6020852139652106e-18,
+  "selected_groups": 1,
+  "evaluated_groups": 1,
+  "same_evaluation_rows_for_selected_groups": true,
+  "training_labels_strictly_before_fit": true,
+  "selection_labels_strictly_before_validation": true
+}

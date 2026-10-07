@@ -1,0 +1,8 @@
+Input: /Users/april/Desktop/USYD 2026s2/5703/week8_code/data/test_45_factors_weekly.csv
+Target: target (already forward-aligned log return)
+Original 12-candidate protocol; quick mode uses one eight-tree candidate.
+Rolling training history: 3 years
+Signal-aligned stages: Development starts 2019-09-06, Validation starts 2024-09-06, Final Test starts 2025-09-05
+XGBoost rolling/7: candidate 1/1
+XGBoost rolling/7: no candidate passed; skipped
+XGBoost fixed/7: candidate 1/1

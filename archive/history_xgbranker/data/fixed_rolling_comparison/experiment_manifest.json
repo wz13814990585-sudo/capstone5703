@@ -1,0 +1,157 @@
+{
+  "input_filename": "test_45_factors_weekly.csv",
+  "input_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "feature_combination_method": "pre-registered full non-empty combinations of F/R/P economic blocks",
+  "feature_blocks": {
+    "F": [
+      "revenue_growth_yoy",
+      "cashflow_to_assets"
+    ],
+    "R": [
+      "ret_120d",
+      "ret_1d",
+      "ret_5d"
+    ],
+    "P": [
+      "close_location_value",
+      "body_range_ratio"
+    ]
+  },
+  "feature_sets": {
+    "fundamental_2": [
+      "revenue_growth_yoy",
+      "cashflow_to_assets"
+    ],
+    "returns_3": [
+      "ret_120d",
+      "ret_1d",
+      "ret_5d"
+    ],
+    "price_action_2": [
+      "close_location_value",
+      "body_range_ratio"
+    ],
+    "fundamental_returns_5": [
+      "revenue_growth_yoy",
+      "cashflow_to_assets",
+      "ret_120d",
+      "ret_1d",
+      "ret_5d"
+    ],
+    "fundamental_price_action_4": [
+      "revenue_growth_yoy",
+      "cashflow_to_assets",
+      "close_location_value",
+      "body_range_ratio"
+    ],
+    "technical_5": [
+      "ret_120d",
+      "ret_1d",
+      "ret_5d",
+      "close_location_value",
+      "body_range_ratio"
+    ],
+    "priority_7": [
+      "revenue_growth_yoy",
+      "ret_120d",
+      "cashflow_to_assets",
+      "ret_1d",
+      "ret_5d",
+      "close_location_value",
+      "body_range_ratio"
+    ]
+  },
+  "training_modes": {
+    "rolling": "trailing configured window, refit at configured interval",
+    "fixed": "train once on the first OOS historical window; never refit"
+  },
+  "time_settings": {
+    "warmup_weeks": 156,
+    "warmup_train_weeks": 104,
+    "warmup_validation_weeks": 52,
+    "rolling_window_weeks": 156,
+    "refit_interval_weeks": 4,
+    "forecast_horizon_weeks": 1
+  },
+  "random_seed": 5703,
+  "python_version": "3.12.14",
+  "xgboost_version": "3.4.1",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.5.3",
+  "target_column": "target",
+  "warmup_candidate_space": [
+    {
+      "candidate_id": "ndcg_d3_bins5",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "min_child_weight": 10,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 140
+      }
+    },
+    {
+      "candidate_id": "ndcg_d4_bins5",
+      "objective": "rank:ndcg",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "min_child_weight": 10,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 2.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "n_estimators": 180
+      }
+    },
+    {
+      "candidate_id": "ndcg_d3_bins10",
+      "objective": "rank:ndcg",
+      "relevance_bins": 10,
+      "params": {
+        "tree_method": "hist",
+        "min_child_weight": 15,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "n_estimators": 180
+      }
+    },
+    {
+      "candidate_id": "pairwise_d4_bins5",
+      "objective": "rank:pairwise",
+      "relevance_bins": 5,
+      "params": {
+        "tree_method": "hist",
+        "min_child_weight": 10,
+        "subsample": 1.0,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "eval_metric": "ndcg@10",
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 160
+      }
+    }
+  ],
+  "backtest_performed": false
+}

@@ -1,0 +1,137 @@
+{
+  "protocol": "integration_only",
+  "changes_to_original_source": false,
+  "files": [
+    {
+      "path": "data_processing/fetch_and_clean.py",
+      "backup_member": "basic data/fetch_and_clean.py",
+      "sha256": "05990f21a2aa995b200f2927cdb82ca3f344e40e4de9e220dd8b575a1543e133",
+      "kind": "original_source"
+    },
+    {
+      "path": "data_processing/build_technical_factors.py",
+      "backup_member": "basic data/build_technical_factors.py",
+      "sha256": "36879414ff98f96b5f9654dffeb12b662127fd2a664fce10f2dbd62319f8474b",
+      "kind": "original_source"
+    },
+    {
+      "path": "data_processing/build_external_factors.py",
+      "backup_member": "basic data/build_external_factors.py",
+      "sha256": "a28c3ce9e13524a842194296b643a9c68a8242fe1b9900e3434e543ac80ef21a",
+      "kind": "original_source"
+    },
+    {
+      "path": "data_processing/collect_sec_fundamentals.py",
+      "backup_member": "basic data/collect_sec_fundamentals.py",
+      "sha256": "f5a22ec6b9c0a6466c215d29c9b5dd56103a31e4b50771502ce49372bcd6e70c",
+      "kind": "original_source"
+    },
+    {
+      "path": "ridge/train_ridge_comparison.py",
+      "backup_member": "train_ridge_comparison.py",
+      "sha256": "38a6d9e5cc74381350564bfb6332f447602b91b144b8950a801ca9a3824709ac",
+      "kind": "original_source"
+    },
+    {
+      "path": "random_forest/random_forest.py",
+      "backup_member": "random_forest.py",
+      "sha256": "1e6acdabb4c354047a001f2c4f4c7e603b001a6b2c8e617a49bebef8bb2b6e29",
+      "kind": "original_source"
+    },
+    {
+      "path": "xgboost_model/train_xgboost_comparison(2).py",
+      "backup_member": "train_xgboost_comparison(2).py",
+      "sha256": "f4ad5d53dc5a4ff097c3dd443c7439a59e8ab735238555f414e9095845a596f3",
+      "kind": "original_source"
+    },
+    {
+      "path": "xgboost_ranker/xgboost_ranker.py",
+      "backup_member": "XGboost_ranker/xgboost_ranker.py",
+      "sha256": "6dfd9c7d02076015c0dc9fabec4f2815fd31543d69511154993503a59a58727e",
+      "kind": "original_source"
+    },
+    {
+      "path": "xgboost_ranker/__init__.py",
+      "backup_member": "XGboost_ranker/__init__.py",
+      "sha256": "460946000337dfd9307969440c9cf4c2ecc4ad6d9faa76b80ddc096f1dad44f1",
+      "kind": "original_source"
+    },
+    {
+      "path": "backtesting/full_history_backtest.py",
+      "backup_member": "报告章节材料/核心代码参考/full_history_backtest.py",
+      "sha256": "9e6e4a736e8fb395d33899652dfecce09cd360ec05d0146e7b94c70933385029",
+      "kind": "original_source"
+    },
+    {
+      "path": "backtesting/portfolio_strategies.py",
+      "backup_member": "报告章节材料/核心代码参考/portfolio_strategies.py",
+      "sha256": "9003a5b041b630fea103232280ce3d7a51e0b4d3ecc21201cad4ebae70ec444e",
+      "kind": "original_source"
+    },
+    {
+      "path": "random_forest/ORIGINAL_README.md",
+      "backup_member": "README.md",
+      "sha256": "d6564dc9808df299d0aa8216f709f40649b49fc8557fc4fd17baea3143eaa5a1",
+      "kind": "original_document"
+    },
+    {
+      "path": "ridge/ORIGINAL_README.md",
+      "backup_member": "README(1).md",
+      "sha256": "5d26ad713e1e4520d7f00d1bd4c4d3c48fe972d548b85390c725e3cf58a46f2d",
+      "kind": "original_document"
+    },
+    {
+      "path": "xgboost_ranker/ORIGINAL_README.md",
+      "backup_member": "XGboost_ranker/README.md",
+      "sha256": "0a531bd477daf43a8cef82d68794172cd925988daa13df59966b1d545e934aa8",
+      "kind": "original_document"
+    },
+    {
+      "path": "backtesting/ORIGINAL_README.md",
+      "backup_member": "报告章节材料/核心代码参考/README.md",
+      "sha256": "ef0432752af330a9bfd5069c7be30dee78b251b7eeca00b73f5f4fec38f25fa8",
+      "kind": "original_document"
+    },
+    {
+      "path": "single_factor_analysis/reference/Single_Factor_Methodology_CN_EN.docx",
+      "sha256": "5c64a9d4548bdba2e65db864a3a290b753abcdf573d3623c004ef82dc5fca356",
+      "kind": "original_reference"
+    },
+    {
+      "path": "single_factor_analysis/reference/Single_Factor_Screening_66_Stocks_EN.xlsx",
+      "sha256": "45dd57bc8c674125b8752c47e3a21de5d82aafc273d37704abf5c04d77d8069a",
+      "kind": "original_reference"
+    },
+    {
+      "path": "single_factor_analysis/reference/Single_Factor_Screening_66_Stocks.xlsx",
+      "source_path": "archive/history_xgbranker/data/feature_search/Single_Factor_Screening_66_Stocks.xlsx",
+      "sha256": "b9bb4a7314ea7317657e2870a7747604f2defd7680fcd3a28892efac4a686061",
+      "kind": "original_reference"
+    },
+    {
+      "path": "data/Original_basic_data.csv",
+      "sha256": "a5febef57484aacb0d966214f1418c21578d8afe6656504354948711dbf56672",
+      "kind": "original_data"
+    },
+    {
+      "path": "data/clean_basic_data.csv",
+      "sha256": "3ffda2638a8e51185f19f96236e108592d87ff065768b2d558ffc62233ead964",
+      "kind": "original_data"
+    },
+    {
+      "path": "data/factor_definitions.csv",
+      "sha256": "e6ca8140b6b7857d1bd7047d2a23375e4e5b303586b24c12aad0606bf25b4f2a",
+      "kind": "original_data"
+    },
+    {
+      "path": "data/test_45_factors_weekly.csv",
+      "sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+      "kind": "original_data"
+    },
+    {
+      "path": "data/test_data_weekly.csv",
+      "sha256": "ef140f5fd44a3a84534e2e3a6f0f19c019646257c6018f7863dd76683517c275",
+      "kind": "original_data"
+    }
+  ]
+}
